@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	Thesaurus-ISO
-Summary:	Text-Thesaurus-ISO perl module
-Summary(pl):	Modu³ perla Text-Thesaurus-ISO
+Summary:	Text::Thesaurus::ISO perl module
+Summary(pl):	Modu³ perla Text::Thesaurus::ISO
 Name:		perl-Text-Thesaurus-ISO
 Version:	1.0
 Release:	8
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Text-Thesaurus-ISO perl module.
+Text::Thesaurus::ISO perl module.
 
 %description -l pl
-Modu³ perla Text-Thesaurus-ISO.
+Modu³ perla Text::Thesaurus::ISO.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
