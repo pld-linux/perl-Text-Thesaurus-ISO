@@ -1,8 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	Thesaurus-ISO
-Summary:	Text::Thesaurus::ISO perl module
-Summary(pl):	Modu³ perla Text::Thesaurus::ISO
+Summary:	Text::Thesaurus::ISO - A class to handle ISO thesaurii
 Name:		perl-Text-Thesaurus-ISO
 Version:	1.0
 Release:	9
@@ -15,10 +14,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Text::Thesaurus::ISO perl module.
-
-%description -l pl
-Modu³ perla Text::Thesaurus::ISO.
+This module defines an abstract ROADS Thesaurus object and a number of
+methods that operate on these objects.  These methods allow new Thesaurus
+objects to be created, specify what Thesaurus file to use, retrieve all
+the information from the thesaurus concerning a given term, find broader
+terms for a given term and find narrower terms for a given term.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
