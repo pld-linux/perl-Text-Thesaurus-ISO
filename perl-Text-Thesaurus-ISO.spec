@@ -9,12 +9,12 @@ Summary:	Text::Thesaurus::ISO - A class to handle ISO thesaurii
 Summary(pl):	Text::Thesaurus::ISO - klasa do obs³ugi tezaurusów ISO
 Name:		perl-Text-Thesaurus-ISO
 Version:	1.0
-Release:	12
+Release:	13
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -38,7 +38,8 @@ szukania wyra¿eñ o wê¿szym znaczeniu.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -53,10 +54,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%dir %{perl_sitelib}/Text/Thesaurus
-%{perl_sitelib}/Text/Thesaurus/ISO.pm
+%dir %{perl_vendorlib}/Text/Thesaurus
+%{perl_vendorlib}/Text/Thesaurus/ISO.pm
 # empty autosplit.ix
-#%dir %{perl_sitelib}/auto/Text/Thesaurus
-#%dir %{perl_sitelib}/auto/Text/Thesaurus/ISO
-#%%{perl_sitelib}/auto/Text/Thesaurus/ISO/autosplit.ix
+#%dir %{perl_vendorlib}/auto/Text/Thesaurus
+#%dir %{perl_vendorlib}/auto/Text/Thesaurus/ISO
+#%%{perl_vendorlib}/auto/Text/Thesaurus/ISO/autosplit.ix
 %{_mandir}/man3/*
