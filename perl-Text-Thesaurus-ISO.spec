@@ -58,5 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 # empty autosplit.ix
 #%dir %{perl_sitelib}/auto/Text/Thesaurus
 #%dir %{perl_sitelib}/auto/Text/Thesaurus/ISO
-#%{perl_sitelib}/auto/Text/Thesaurus/ISO/autosplit.ix
+#%%{perl_sitelib}/auto/Text/Thesaurus/ISO/autosplit.ix
 %{_mandir}/man3/*
