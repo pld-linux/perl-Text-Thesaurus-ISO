@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	Thesaurus-ISO
-%include	/usr/lib/rpm/macros.perl
 Summary:	Text-Thesaurus-ISO perl module
 Summary(pl):	Modu³ perla Text-Thesaurus-ISO
 Name:		perl-Text-Thesaurus-ISO
 Version:	1.0
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Text-Thesaurus-ISO perl module.
 Modu³ perla Text-Thesaurus-ISO.
 
 %prep
-%setup -q -n Text-Thesaurus-ISO-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
