@@ -33,7 +33,7 @@ Ten modu³ definiuje abstrakcyjny obiekt ROADS Thesaurus oraz wiele
 metod operuj±cych na tych obiektach. Metody te pozwalaj± na tworzenie
 nowych obiektów Thesaurus, wskazywanie pliku, jaki ma byæ u¿ywany,
 odczytywania wszystkich informacji z tezaurusa dotycz±cych podanego
-wyra¿enia, szukania wyra¿enia bardziej ogólneg do podanego oraz
+wyra¿enia, szukania wyra¿enia bardziej ogólnego do podanego oraz
 szukania wyra¿eñ o wê¿szym znaczeniu.
 
 %prep
