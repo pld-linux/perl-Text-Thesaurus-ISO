@@ -4,7 +4,7 @@
 Summary:	Text::Thesaurus::ISO - A class to handle ISO thesaurii
 Name:		perl-Text-Thesaurus-ISO
 Version:	1.0
-Release:	9
+Release:	10
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
