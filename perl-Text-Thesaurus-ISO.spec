@@ -3,7 +3,7 @@ Summary:	Text-Thesaurus-ISO perl module
 Summary(pl):	Modu³ perla Text-Thesaurus-ISO
 Name:		perl-Text-Thesaurus-ISO
 Version:	1.0
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
