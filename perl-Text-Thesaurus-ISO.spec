@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Text
-%define	pnam	Thesaurus-ISO
+%define		pdir	Text
+%define		pnam	Thesaurus-ISO
 Summary:	Text::Thesaurus::ISO - a class to handle ISO thesaurii
 Summary(pl):	Text::Thesaurus::ISO - klasa do obs³ugi tezaurusów ISO
 Name:		perl-Text-Thesaurus-ISO
