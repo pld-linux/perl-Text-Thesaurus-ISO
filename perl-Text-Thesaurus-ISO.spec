@@ -1,3 +1,7 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	Thesaurus-ISO
@@ -5,7 +9,7 @@ Summary:	Text::Thesaurus::ISO - A class to handle ISO thesaurii
 Summary(pl):	Text::Thesaurus::ISO - klasa do obs³ugi tezaurusów ISO
 Name:		perl-Text-Thesaurus-ISO
 Version:	1.0
-Release:	11
+Release:	12
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -36,6 +40,7 @@ szukania wyra¿eñ o wê¿szym znaczeniu.
 %build
 perl Makefile.PL
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -50,6 +55,8 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %dir %{perl_sitelib}/Text/Thesaurus
 %{perl_sitelib}/Text/Thesaurus/ISO.pm
-%dir %{perl_sitelib}/auto/Text/Thesaurus
-%{perl_sitelib}/auto/Text/Thesaurus/ISO
+# empty autosplit.ix
+#%dir %{perl_sitelib}/auto/Text/Thesaurus
+#%dir %{perl_sitelib}/auto/Text/Thesaurus/ISO
+#%{perl_sitelib}/auto/Text/Thesaurus/ISO/autosplit.ix
 %{_mandir}/man3/*
