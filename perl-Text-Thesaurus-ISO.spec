@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	Thesaurus-ISO
-Summary:	Text::Thesaurus::ISO - A class to handle ISO thesaurii
+Summary:	Text::Thesaurus::ISO - a class to handle ISO thesaurii
 Summary(pl):	Text::Thesaurus::ISO - klasa do obs³ugi tezaurusów ISO
 Name:		perl-Text-Thesaurus-ISO
 Version:	1.0
