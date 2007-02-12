@@ -6,7 +6,7 @@
 %define		pdir	Text
 %define		pnam	Thesaurus-ISO
 Summary:	Text::Thesaurus::ISO - a class to handle ISO thesaurii
-Summary(pl):	Text::Thesaurus::ISO - klasa do obs³ugi tezaurusów ISO
+Summary(pl.UTF-8):   Text::Thesaurus::ISO - klasa do obsÅ‚ugi tezaurusÃ³w ISO
 Name:		perl-Text-Thesaurus-ISO
 Version:	1.0
 Release:	14
@@ -28,13 +28,13 @@ retrieve all the information from the thesaurus concerning a given
 term, find broader terms for a given term and find narrower terms for
 a given term.
 
-%description -l pl
-Ten modu³ definiuje abstrakcyjny obiekt ROADS Thesaurus oraz wiele
-metod operuj±cych na tych obiektach. Metody te pozwalaj± na tworzenie
-nowych obiektów Thesaurus, wskazywanie pliku, jaki ma byæ u¿ywany,
-odczytywania wszystkich informacji z tezaurusa dotycz±cych podanego
-wyra¿enia, szukania wyra¿enia bardziej ogólnego do podanego oraz
-szukania wyra¿eñ o wê¿szym znaczeniu.
+%description -l pl.UTF-8
+Ten moduÅ‚ definiuje abstrakcyjny obiekt ROADS Thesaurus oraz wiele
+metod operujÄ…cych na tych obiektach. Metody te pozwalajÄ… na tworzenie
+nowych obiektÃ³w Thesaurus, wskazywanie pliku, jaki ma byÄ‡ uÅ¼ywany,
+odczytywania wszystkich informacji z tezaurusa dotyczÄ…cych podanego
+wyraÅ¼enia, szukania wyraÅ¼enia bardziej ogÃ³lnego do podanego oraz
+szukania wyraÅ¼eÅ„ o wÄ™Å¼szym znaczeniu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
