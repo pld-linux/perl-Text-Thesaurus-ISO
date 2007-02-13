@@ -6,7 +6,7 @@
 %define		pdir	Text
 %define		pnam	Thesaurus-ISO
 Summary:	Text::Thesaurus::ISO - a class to handle ISO thesaurii
-Summary(pl.UTF-8):   Text::Thesaurus::ISO - klasa do obsługi tezaurusów ISO
+Summary(pl.UTF-8):	Text::Thesaurus::ISO - klasa do obsługi tezaurusów ISO
 Name:		perl-Text-Thesaurus-ISO
 Version:	1.0
 Release:	14
