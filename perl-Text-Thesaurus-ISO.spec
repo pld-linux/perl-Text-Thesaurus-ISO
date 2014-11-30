@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Text
 %define		pnam	Thesaurus-ISO
+%include	/usr/lib/rpm/macros.perl
 Summary:	Text::Thesaurus::ISO - a class to handle ISO thesaurii
 Summary(pl.UTF-8):	Text::Thesaurus::ISO - klasa do obsługi tezaurusów ISO
 Name:		perl-Text-Thesaurus-ISO
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	dd33a2bdae9519806b941ea8063fb1f5
+URL:		http://search.cpan.org/dist/Text-Thesaurus-ISO/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -22,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This module defines an abstract ROADS Thesaurus object and a number of
-methods that operate on these objects.  These methods allow new
+methods that operate on these objects. These methods allow new
 Thesaurus objects to be created, specify what Thesaurus file to use,
 retrieve all the information from the thesaurus concerning a given
 term, find broader terms for a given term and find narrower terms for
